@@ -1,0 +1,25 @@
+include ../i3/config_base
+
+titlebar_padding 1
+
+input * {
+    xkb_layout "gb, de"
+    xkb_options "grp:win_space_toggle"
+}
+
+input type:touchpad {
+    tap enabled
+    natural_scroll disabled
+    events enabled
+    middle_emulation disabled
+    pointer_accel 0.4
+}
+
+assign [title="Firefox — Sharing Indicator"] 9
+
+output "Dell Inc. DELL UP2516D 3JV405AG097L" scale 1
+output eDP-1 scale 1
+output "Dell Inc. DELL UP2516D 3JV405AG097L" pos 0 0
+output eDP-1 pos 0 1440
+output HDMI-A-1 mode 1280x720@50Hz
+include /etc/sway/config.d/*
